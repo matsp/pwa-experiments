@@ -115,11 +115,6 @@ module.exports = {
       theme_color: '#0277bd',
       icons: [
         {
-          src: path.join(root + '/static/img/icons/favicon.png'),
-          sizes: [16, 32],
-          destination: '/assets/img/icons'
-        },
-        {
           src: path.join(root + '/static/img/icons/android-chrome.png'),
           sizes: [192, 512],
           destination: '/assets/img/icons'
