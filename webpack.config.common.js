@@ -16,7 +16,8 @@ module.exports = {
     app: [path.resolve(app + 'index.js')]
   },
   output: {
-    path: output
+    path: output,
+    publicPath: 'https://matsp.github.io/pwa-experiments'
   },
   module: {
     rules: [
