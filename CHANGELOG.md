@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.10"></a>
+## [0.1.10](https://github.com/matsp/pwa-experiments/compare/v0.1.9...v0.1.10) (2018-02-21)
+
+
+### Bug Fixes
+
+* **webpack:** Change publicPath. ([9c9dba2](https://github.com/matsp/pwa-experiments/commit/9c9dba2))
+
+
+
 <a name="0.1.9"></a>
 ## [0.1.9](https://github.com/matsp/pwa-experiments/compare/v0.1.8...v0.1.9) (2018-02-21)
 
