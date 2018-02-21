@@ -116,13 +116,11 @@ module.exports = {
       icons: [
         {
           src: path.join(root + '/static/img/icons/android-chrome.png'),
-          sizes: [192, 512],
-          destination: '/assets/img/icons'
+          sizes: [192, 512]
         },
         {
           src: path.join(root + '/static/img/icons/apple.png'),
           sizes: [60, 76, 120, 152, 180],
-          destination: '/assets/img/icons',
           ios: true
         }
       ]
