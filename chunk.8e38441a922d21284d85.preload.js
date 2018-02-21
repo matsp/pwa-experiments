@@ -1,0 +1,1 @@
+webpackJsonp([0],{ltRp:function(e,l,t){"use strict";Object.defineProperty(l,"__esModule",{value:!0});var n=t("XyMi"),r=Object(n.a)(null,function(){var e=this.$createElement,l=this._self._c||e;return l("m-layout-grid-inner",[l("m-layout-grid-cell",[l("m-typo-headline",[this._v("Hello World, PWA!")])],1)],1)},[],!1,null,null,null);l.default=r.exports}});

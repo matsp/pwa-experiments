@@ -1,0 +1,47 @@
+{
+  "icons": [
+    {
+      "src": "icon_180x180.c3fe380470e04449d44d9e01216b6109.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_152x152.9ebbce402a76225dfd43beb7280e7737.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_120x120.2521b4e65ada3acfd602441e55fcd706.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_76x76.0ad47d48460e692ef100041fccf5a2a2.png",
+      "sizes": "76x76",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_60x60.e27380bb520e608bb7aa8b69af42b606.png",
+      "sizes": "60x60",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_512x512.a2b41cff8ffd929dfef397a1777d03b8.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_192x192.8c7e91d7bf5c64530ca5f19f6b411e9e.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "pwa-experiments",
+  "short_name": "pwa",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "https://matsp.github.io/pwa-experiments/",
+  "description": "Creating a PWA with VueJS!",
+  "background_color": "#ffffff",
+  "theme_color": "#0277bd"
+}
