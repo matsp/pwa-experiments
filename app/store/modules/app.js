@@ -1,10 +1,10 @@
-import * as types from './mutation-types'
+//import * as types from './mutation-types'
 
 const state = {
   drawerListItems: {
     home: {
       text: 'Home',
-      route: '/home',
+      route: '/',
       icon: 'home'
     }
   }
