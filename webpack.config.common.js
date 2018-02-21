@@ -96,7 +96,6 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(app + 'index.html'),
-      title: 'pwa-experiments',
       chunksSortMode: 'dependency'
       // hash: true
     }),
@@ -110,7 +109,7 @@ module.exports = {
       name: 'pwa-experiments',
       short_name: 'pwa',
       description: 'Creating a PWA with VueJS!',
-      start_url: 'index.html',
+      start_url: '/',
       display: 'standalone',
       background_color: '#ffffff',
       theme_color: '#0277bd',

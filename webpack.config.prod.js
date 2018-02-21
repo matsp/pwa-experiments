@@ -46,9 +46,9 @@ module.exports = merge(common, {
     new SWPrecacheWebpackPlugin({
       cacheId: 'pwa-experiments',
       filename: 'service-worker.js',
-      staticFileGlobs: [output + '/**/*.{js,html,css}'],
+      staticFileGlobs: [output + '/**/*.{js,html,css,png,ico}'],
       minify: true,
-      stripPrefix: 'output/',
+      //stripPrefix: 'output/',
       runtimeCaching: [
         {
           urlPattern: /^https:\/\/fonts\.gstatic\.com\//,
