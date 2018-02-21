@@ -109,7 +109,7 @@ module.exports = {
       name: 'pwa-experiments',
       short_name: 'pwa',
       description: 'Creating a PWA with VueJS!',
-      start_url: '/',
+      start_url: 'https://matsp.github.io/pwa-experiments',
       display: 'standalone',
       background_color: '#ffffff',
       theme_color: '#0277bd',
