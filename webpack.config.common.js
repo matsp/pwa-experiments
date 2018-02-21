@@ -17,7 +17,7 @@ module.exports = {
   },
   output: {
     path: output,
-    publicPath: 'https://matsp.github.io/pwa-experiments'
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -109,7 +109,7 @@ module.exports = {
       name: 'pwa-experiments',
       short_name: 'pwa',
       description: 'Creating a PWA with VueJS!',
-      start_url: 'https://matsp.github.io/pwa-experiments',
+      start_url: '/index.html',
       display: 'standalone',
       background_color: '#ffffff',
       theme_color: '#0277bd',
