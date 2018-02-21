@@ -1,7 +1,7 @@
 {
   "name": "pwa-experiments",
   "private": "true",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "pwa experiments with Vue.js and material-components-web",
   "license": "MIT",
   "repository": {
