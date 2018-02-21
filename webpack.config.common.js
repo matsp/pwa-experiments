@@ -4,14 +4,19 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const WebpackPwaManifest = require('webpack-pwa-manifest')
 
 const root = path.join(__dirname)
 const app = path.join(root + '/app/')
+const output = path.join(root + '/public')
 const nodeModules = path.join(root, '/node_modules/')
 
 module.exports = {
   entry: {
     app: [path.resolve(app + 'index.js')]
+  },
+  output: {
+    path: output
   },
   module: {
     rules: [
@@ -90,14 +95,42 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(app + 'index.html'),
+      title: 'pwa-experiments',
       chunksSortMode: 'dependency'
       // hash: true
     }),
     new ScriptExtHtmlWebpackPlugin({
       preload: {
-        test: /\.js$/,
+        test: /\.preload\.js$/,
         chunks: 'async'
       }
+    }),
+    new WebpackPwaManifest({
+      name: 'pwa-experiments',
+      short_name: 'pwa',
+      description: 'Creating a PWA with VueJS!',
+      start_url: '/index.html',
+      display: 'standalone',
+      background_color: '#ffffff',
+      theme_color: '#0277bd',
+      icons: [
+        {
+          src: path.join(root + '/static/img/icons/favicon.png'),
+          sizes: [16, 32],
+          destination: '/assets/img/icons'
+        },
+        {
+          src: path.join(root + '/static/img/icons/android-chrome.png'),
+          sizes: [192, 512],
+          destination: '/assets/img/icons'
+        },
+        {
+          src: path.join(root + '/static/img/icons/apple.png'),
+          sizes: [60, 76, 120, 152, 180],
+          destination: '/assets/img/icons',
+          ios: true
+        }
+      ]
     }),
     new ExtractTextPlugin({
       filename: '[name].[chunkhash].css',

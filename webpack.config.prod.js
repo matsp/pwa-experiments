@@ -14,7 +14,7 @@ module.exports = merge(common, {
   output: {
     path: output,
     filename: '[name].[chunkhash].js',
-    chunkFilename: 'chunk.[chunkhash].js'
+    chunkFilename: 'chunk.[chunkhash].preload.js'
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -36,13 +36,13 @@ module.exports = merge(common, {
       cache: true,
       parallel: false
     }),
-    new CopyWebpackPlugin([
-      {
-        from: path.resolve('./static'),
-        to: path.join(output + '/assets'),
-        ignore: ['.*']
-      }
-    ]),
+    //new CopyWebpackPlugin([
+      //{
+        //from: path.resolve('./static'),
+        //to: path.join(output + '/assets'),
+        //ignore: ['.*']
+      //}
+    //]),
     new SWPrecacheWebpackPlugin({
       cacheId: 'pwa-experiments',
       filename: 'service-worker.js',

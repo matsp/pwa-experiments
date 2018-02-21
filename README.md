@@ -14,21 +14,24 @@ If that is done I build on top of my small naive app and have a look at a more r
 ## Steps
 
 The main goal should be optimising for a correct PWA, but performance goes hand-in-hand with it.
+First I tested at my local computer but I switched to Github-Pages because of automatic compression and HTTPS connection.
 
-### #1: Cache assets & network requests 
+### #1: Cache assets & network requests --> ServiceWorker
 
 After installing [sw-precache-webpack-plugin](https://github.com/goldhand/sw-precache-webpack-plugin) and a basic configuration
 Lighthouse give me the following:
 
 - 55% (PWA)
-- 69% (Performance)
+- 92% (Performance)
 - 100% (Accessibility)
 
-### #2: Create a manifest.json
+### #2: Create a manifest.json --> PWA manifest
 
 Creating a `manifest.json` results in a big impact for PWA score - there is just one point I won't fix to get 
 the 100% (redirecting always to https is a serving configuration). The scores after step #2 are the following:
 
-- 91% (PWA)
-- 69% (Performance)
+- 100% (PWA)
+- 92% (Performance)
 - 100% (Accessibility)
+
+### #3: ...
