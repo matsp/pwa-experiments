@@ -17,7 +17,7 @@ module.exports = {
   },
   output: {
     path: output,
-    publicPath: 'https://matsp.github.io/pwa-experiments'
+    publicPath: 'https://matsp.github.io/pwa-experiments/'
   },
   module: {
     rules: [
